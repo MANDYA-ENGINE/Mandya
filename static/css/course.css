@@ -1,24 +1,24 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
     color: #333;
 }
 
 html, body{
-    background-color: #f4f6f9;
+    background-color: #240C61;
     width: 100%;
     height: 100%;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #240C61;
+    color: #49610C;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(231, 10, 10, 0.1);
 }   
 .header-content {
     display: flex;
