@@ -2,16 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #CDC2A5;
+    background-color: #FFE5CF;
 }
-.author { background: #e314b3; }
-.playlist { background: #ff5722; }
-.blog { background: #4caf50; }
-.github { background: #333; }
-.channel { background: #4d0cd0 }
-.video { background: #d3ab08 }
+.author { background: #E4B1F0; }
+.playlist { background: #7E60BF; }
+.blog { background: #433878; }
+.github { background: #387478; }
+.channel { background: #629584 }
+.video { background: #B8001F }
 header {
-    background: #295F98;
+    background: #FF885B;
     color: #fff;
     padding: 10px 20px;
     display: flex;

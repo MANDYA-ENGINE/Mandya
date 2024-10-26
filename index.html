@@ -43,17 +43,26 @@
         <div class="filter">
             <select id="category-filter">
                 <option value="">All Categories</option>
-                <option value="cuda-lang">PCB Designing</option>
-                <option value="cuda-lang">Internet of Things</option>
-                <option value="cuda-lang">Embedded Systems</option>
-                <option value="cuda-lang"></option>
-                <option value="cuda-lang"></option>
-                <option value="cuda-lang"></option>
+                <option value="MICROCONTROLLERS">Microcontrollers</option>
+                <option value="COMPUTER-VISION">Computer Vision</option>
+                <option value="VLSI">VLSI</option>
+                <!-- <option value="WEARABLE-TECHNOLOGIES">Wearable Technologies</option> -->
+                <option value="PHOTONICS">Photonics</option>
+                <option value="SEMICONDUCTOR-DEVICES">Semiconductor Devices</option>
+                <option value="DIGITAL-ELECTRONICS">Digital Electronics</option>
+                <!-- <option value="SIGNALS-AND-SYSTEMS">Signals and Systems</option>
+                <option value="ANALOG-CIRCUITS">Analog Circuits</option>
+                <option value="MICROPROCESSOR">Microprocessor</option>
+                <option value="CONTROL-SYSTEMS">Control Systems</option>
+                <option value="COMPUTER-ORGANIZATION-ARCHITECTURE">Computer Organization and Architecture</option>
+                <option value="DIGITAL-SIGNAL-PROCESSING">Digital Signal Processing</option> -->
+                
+
             </select>
         </div>
         
         <!-- PCB designing -->
-        <div class="category" data-category="dl" id="pcb designing">
+        <div class="category" data-category="pcb" id="pcb-designing">
             <h2><img src="https://img.icons8.com/?size=100&id=UiguqhkFDSiA&format=png&color=000000" class="category-icon" alt="PCB">PCB Designing</h2>
             <div class="category-info">
                 <p class="total-count">Total Courses: <span id="dl-count">2</span></p>
@@ -111,7 +120,7 @@
 
 
     <!-- Embedded systems  -->
-    <div class="category" data-category="dl" id="name of course">
+    <div class="category" data-category=" " id="name of course">
         <h2><img src="" class="category-icon" alt="">upcoming</h2>
         <div class="category-info">
             <p class="total-count">Total Courses: <span id="dl-count">        </span></p>
@@ -129,28 +138,178 @@
                     <p>description of the course</p>
                     <section class="tag">
                         <span class="playlist">playlist</span>
-                        <span class="author"><b><i>Author: </i></b>Name</span>
+                        <span class="author"><b><i>Author: </i></b>.......</span>
                     </section>
                 </div>
             </div>
         </div>
+
         <div class="view-more">
             <button id="dl-courses-view-more">View More</button>
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
+    <!-- Microcontrollers  -->
+    <div class="category" data-category="MICROCONTROLLERS" id="microcontrollers">
+        <h2><img src="" class="category-icon" alt="">Microcontrollers</h2>
+        <div class="category-info">
+            <p class="total-count">Total Courses: <span id="microcontrollers-count"></span></p>
+        </div>
+        <div class="course-grid" id="microcontrollers-grid">
+            <div class="course-item" onclick="redirect(this)">
+                <div class="image">
+                    <img src="microcontrollers.jpg" alt="">
+                    <div class="videosCount"></div>
+                </div>
+                <div class="course-info">
+                    <h3><a href="/reference-of-second-html">Microcontrollers Course</a></h3>
+                    <p>Description of the Microcontrollers course</p>
+                    <section class="tag">
+                        <span class="playlist">playlist</span>
+                        <span class="author"><b><i>Author: </i></b>.......</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="view-more">
+            <button id="microcontrollers-view-more">View More</button>
+        </div>
+    </div>
     
-
-
+    <!-- Computer Vision -->
+    <div class="category" data-category="COMPUTER-VISION" id="computer-vision">
+        <h2><img src="" class="category-icon" alt="">Computer Vision</h2>
+        <div class="category-info">
+            <p class="total-count">Total Courses: <span id="computer-vision-count"></span></p>
+        </div>
+        <div class="course-grid" id="computer-vision-grid">
+            <div class="course-item" onclick="redirect(this)">
+                <div class="image">
+                    <img src="computer-vision.jpg" alt="">
+                    <div class="videosCount"></div>
+                </div>
+                <div class="course-info">
+                    <h3><a href="/reference-of-second-html">Computer Vision Course</a></h3>
+                    <p>Description of the Computer Vision course</p>
+                    <section class="tag">
+                        <span class="playlist">playlist</span>
+                        <span class="author"><b><i>Author: </i></b>.......</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="view-more">
+            <button id="computer-vision-view-more">View More</button>
+        </div>
+    </div>
+    <!-- VLSI -->
+<div class="category" data-category="VLSI" id="vlsi">
+    <h2><img src="" class="category-icon" alt="">VLSI</h2>
+    <div class="category-info">
+        <p class="total-count">Total Courses: <span id="vlsi-count"></span></p>
+    </div>
+    <div class="course-grid" id="vlsi-grid">
+        <div class="course-item" onclick="redirect(this)">
+            <div class="image">
+                <img src="vlsi.jpg" alt="">
+                <div class="videosCount"></div>
+            </div>
+            <div class="course-info">
+                <h3><a href="/reference-of-second-html">VLSI Course</a></h3>
+                <p>Description of the VLSI course</p>
+                <section class="tag">
+                    <span class="playlist">playlist</span>
+                    <span class="author"><b><i>Author: </i></b>.......</span>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="view-more">
+        <button id="vlsi-view-more">View More</button>
+    </div>
+  </div>
+    
+  
+    <!-- Photonics -->
+    <div class="category" data-category="PHOTONICS" id="photonics">
+        <h2><img src="" class="category-icon" alt="">Photonics</h2>
+        <div class="category-info">
+            <p class="total-count">Total Courses: <span id="photonics-count"></span></p>
+        </div>
+        <div class="course-grid" id="photonics-grid">
+            <div class="course-item" onclick="redirect(this)">
+                <div class="image">
+                    <img src="photonics.jpg" alt="">
+                    <div class="videosCount"></div>
+                </div>
+                <div class="course-info">
+                    <h3><a href="/reference-of-second-html">Photonics Course</a></h3>
+                    <p>Description of the Photonics course</p>
+                    <section class="tag">
+                        <span class="playlist">playlist</span>
+                        <span class="author"><b><i>Author: </i></b>.......</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="view-more">
+            <button id="photonics-view-more">View More</button>
+        </div>
+    </div>
+    <!-- Semiconductor Devices -->
+    <div class="category" data-category="SEMICONDUCTOR-DEVICES" id="semiconductor-devices">
+        <h2><img src="" class="category-icon" alt="">Semiconductor Devices</h2>
+        <div class="category-info">
+            <p class="total-count">Total Courses: <span id="semiconductor-devices-count"></span></p>
+        </div>
+        <div class="course-grid" id="semiconductor-devices-grid">
+            <div class="course-item" onclick="redirect(this)">
+                <div class="image">
+                    <img src="semiconductor-devices.jpg" alt="">
+                    <div class="videosCount"></div>
+                </div>
+                <div class="course-info">
+                    <h3><a href="/reference-of-second-html">Semiconductor Devices Course</a></h3>
+                    <p>Description of the Semiconductor Devices course</p>
+                    <section class="tag">
+                        <span class="playlist">playlist</span>
+                        <span class="author"><b><i>Author: </i></b>.......</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="view-more">
+            <button id="semiconductor-devices-view-more">View More</button>
+        </div>
+    </div>
+    <!-- Digital Electronics -->
+    <div class="category" data-category="DIGITAL-ELECTRONICS" id="digital-electronics">
+        <h2><img src="" class="category-icon" alt="">Digital Electronics</h2>
+        <div class="category-info">
+            <p class="total-count">Total Courses: <span id="digital-electronics-count"></span></p>
+        </div>
+        <div class="course-grid" id="digital-electronics-grid">
+            <div class="course-item" onclick="redirect(this)">
+                <div class="image">
+                    <img src="digital-electronics.jpg" alt="">
+                    <div class="videosCount"></div>
+                </div>
+                <div class="course-info">
+                    <h3><a href="/reference-of-second-html">Digital Electronics Course</a></h3>
+                    <p>Description of the Digital Electronics course</p>
+                    <section class="tag">
+                        <span class="playlist">playlist</span>
+                        <span class="author"><b><i>Author: </i></b>.......</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="view-more">
+            <button id="digital-electronics-view-more">View More</button>
+        </div>
+    </div>
+    ˘
+   
 
 
         </div>
