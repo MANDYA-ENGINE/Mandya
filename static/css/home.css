@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #CDC2A5;
 }
 .author { background: #e314b3; }
 .playlist { background: #ff5722; }
@@ -11,7 +11,7 @@ body {
 .channel { background: #4d0cd0 }
 .video { background: #d3ab08 }
 header {
-    background: #333;
+    background: #295F98;
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -55,30 +55,60 @@ header {
     
 nav {
     display: flex;
+    background-color: #333; /* Dark background for the nav */
+    padding: 10px 20px; /* Add padding for better spacing */
+    position: relative; /* Set position relative for pseudo-elements */
+    border-radius: 15px; /* Rounded corners for the nav */
+    overflow: hidden; /* Ensure the pseudo-elements don't overflow */
 }
-    
+
+nav::before,
+nav::after {
+    content: '';
+    position: absolute;
+    width: 50px; /* Width of the cut corner */
+    height: 50px; /* Height of the cut corner */
+    background-color: #333; /* Same color as the nav */
+}
+
+nav::before {
+    top: -25px; /* Position the left cut corner */
+    left: -25px; /* Position the left cut corner */
+    border-top-left-radius: 25px; /* Rounded corner */
+}
+
+nav::after {
+    top: -25px; /* Position the right cut corner */
+    right: -25px; /* Position the right cut corner */
+    border-top-right-radius: 25px; /* Rounded corner */
+}
+
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px; /* Increased gap for a more spacious look */
 }
-    
+
 nav ul li {
     margin: 0;
 }
-    
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    font-family: 'Arial', sans-serif; /* Change font family */
+    padding: 10px 15px; /* Add padding to links for better click area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
 }
-    
+
 nav ul li a:hover {
-    color: #007bff;
+    color: #fff; /* Keep text color white on hover */
+    background-color: #CDC2A5; /* Change background on hover */
 }
     
 .menu-toggle {
@@ -93,12 +123,12 @@ nav ul li a:hover {
     display: block;
     height: 3px;
     width: 25px;
-    background: #fff;
+    background: #ffffff;
     margin: 3px 0;
     transition: background 0.3s;
 }
 .hero {
-    background: url('https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png') no-repeat center center;
+    background: url('/static/img/background.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
     padding: 100px 0;
