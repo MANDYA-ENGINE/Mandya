@@ -2,17 +2,17 @@
     padding: 0;
     margin: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
-    color: #333;
+    color: #FF885B;
 }
 
 html, body{
-    background-color: #F5F7F8;
+    background-color: #FFE5CF;
     width: 100%;
     height: 100%;
 }
 
 header {
-    background-color: #333; /* Dark background for the header */
+    background-color: #FF885B; /* Dark background for the header */
     color: #fff; /* Change text color to white */
     padding: 10px 20px; /* Add padding for better spacing */
     display: flex;
@@ -30,7 +30,7 @@ header::after {
     position: absolute;
     width: 50px; /* Width of the cut corner */
     height: 50px; /* Height of the cut corner */
-    background-color: #333; /* Same color as the header */
+    background-color: #FF885B; /* Same color as the header */
 }
 
 header::before {
