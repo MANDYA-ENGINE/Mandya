@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnHub - PCB Designing</title>
+  <link rel="stylesheet" href="/static/css/course.css">
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="logo">
+      <a href="/">
+        <!-- Optional Logo -->
+        <!-- <img src="logo.png" alt="LearnHub Logo"> -->
+        <h1>LearnHub</h1>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="https://github.com/MANDYA-ENGINE">GitHub</a></li>
+        <li><a href="mailto:ujwalraghu26@gmail.com">Suggest</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="video-list">
+    <!-- Video Card 1 -->
+    <div class="video-card">
+      <div class="thumbnail" onclick="redirect('https://youtu.be/-dZ2GNF9eR0')">
+        <img src="https://wus-www.sway-cdn.com/s/jLzFM9LxXEpsuQhY/images/9fiPPNMYP4dk1c?quality=1280&allowAnimation=true" alt="Video Thumbnail">
+        <div class="overlay">
+          <span class="playtime">0:59</span>
+        </div>
+      </div>
+      <div class="video-details">
+        <h3>Happy Connections (PCB's are Not Scary)</h3>
+        <div class="watched">
+          <label>
+            <input type="checkbox" onclick="saveState(this.checked, 1)"> Watched
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Card 2 -->
+    <div class="video-card">
+      <div class="thumbnail" onclick="redirect('https://www.youtube.com/watch?v=KgmsvopC9Qk')">
+        <img src="https://wus-www.sway-cdn.com/s/jLzFM9LxXEpsuQhY/images/veR9sULmXr2ePb?quality=1280&allowAnimation=true" alt="Video Thumbnail">
+        <div class="overlay">
+          <span class="playtime">0:59</span>
+        </div>
+      </div>
+      <div class="video-details">
+        <h3>PCB Connections Guide</h3>
+        <div class="watched">
+          <label>
+            <input type="checkbox" onclick="saveState(this.checked, 2)"> Watched
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Add more video cards as needed -->
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 LearnHub. All rights reserved.</p>
+</footer>
+
+<script src="/static/script/courses.js"></script>
+</body>
+</html>

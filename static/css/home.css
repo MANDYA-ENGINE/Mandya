@@ -1,153 +1,162 @@
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFE5CF;
+    background-color: #FFE5CF; /* Light orange */
 }
-.author { background: #E4B1F0; }
-.playlist { background: #7E60BF; }
-.blog { background: #433878; }
-.github { background: #387478; }
-.channel { background: #629584 }
-.video { background: #B8001F }
+
+/* Header Styling */
 header {
-    background: #FF885B;
-    color: #fff;
+    background-color: #1a1a1a; /* Black background */
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}   
-.course-item div.image{
-    position: relative;
-    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: sticky; /* Sticky header */
+    top: 0;
+    z-index: 10;
 }
 
-.course-item div.image .videosCount{
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 16px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        transform: translate(-2px, -7px);
-    
-        color: white; 
-        background-color: rgba(0, 0, 0, 0.6); 
-        border-radius: 3px;
-    
-        padding: 0 3px;
-}
 .header-content {
     display: flex;
-    align-items: center;
     width: 100%;
     max-width: 1200px;
+    align-items: center;
     justify-content: space-between;
-    position: relative;
 }
+
 .logo img {
     height: 40px;
+    filter: drop-shadow(2px 2px 5px rgba(255, 136, 91, 0.7)); /* Soft shadow for depth */
 }
-    
+
+/* Navigation Bar */
 nav {
     display: flex;
-    background-color: #333; /* Dark background for the nav */
-    padding: 10px 20px; /* Add padding for better spacing */
-    position: relative; /* Set position relative for pseudo-elements */
-    border-radius: 15px; /* Rounded corners for the nav */
-    overflow: hidden; /* Ensure the pseudo-elements don't overflow */
-}
-
-nav::before,
-nav::after {
-    content: '';
-    position: absolute;
-    width: 50px; /* Width of the cut corner */
-    height: 50px; /* Height of the cut corner */
-    background-color: #333; /* Same color as the nav */
-}
-
-nav::before {
-    top: -25px; /* Position the left cut corner */
-    left: -25px; /* Position the left cut corner */
-    border-top-left-radius: 25px; /* Rounded corner */
-}
-
-nav::after {
-    top: -25px; /* Position the right cut corner */
-    right: -25px; /* Position the right cut corner */
-    border-top-right-radius: 25px; /* Rounded corner */
+    align-items: center;
+    padding: 0 10px;
+    background-color: #FF885B; /* Orange background */
+    border-radius: 10px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    align-items: center;
-    gap: 30px; /* Increased gap for a more spacious look */
-}
-
-nav ul li {
+    gap: 15px; /* Space between items */
+    padding: 0;
     margin: 0;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #1a1a1a; /* Black text */
+    padding: 8px 15px;
+    background-color: #FFD1A4; /* Light orange */
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Arial', sans-serif; /* Change font family */
-    padding: 10px 15px; /* Add padding to links for better click area */
-    border-radius: 5px; /* Rounded corners for links */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #fff; /* Keep text color white on hover */
-    background-color: #CDC2A5; /* Change background on hover */
+    background-color: #FF885B; /* Darker orange */
+    color: #fff;
 }
-    
+
+/* Mobile Toggle */
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
-    padding: 5px;
+    display: none; /* Hidden by default, only shown on mobile */
 }
-    
-.menu-toggle span {
-    display: block;
-    height: 3px;
-    width: 25px;
-    background: #ffffff;
-    margin: 3px 0;
-    transition: background 0.3s;
-}
+
+/* Hero Section */
 .hero {
     background: url('/static/img/background.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
-    padding: 100px 0;
     text-align: center;
+    padding: 100px 20px;
     position: relative;
 }
-.hero h2 {
-    font-size: 3em;
-    margin: 0;
-    padding: 0 10px;
-    text-shadow: 2px 2px 4px rgba(247, 9, 9, 0.5);
-    color: #fcfcfc;
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
 }
+
+.hero h2 {
+    font-size: 2.8em;
+    color: #FFD1A4; /* Light orange text */
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
 .hero p {
-    margin: 20px 0;
-    padding: 0 10px;
-    font-size: 1.5em;
-    text-shadow: 1px 1px 3px rgba(21, 240, 54, 0.5);
-    color: #fcfcfc;
+    font-size: 1.4em;
+    color: #FF885B; /* Dark orange */
+    margin-top: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+/* Button Styling for Hero */
+.hero button {
+    background-color: #FF885B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    z-index: 2;
+    position: relative;
+}
+
+.hero button:hover {
+    background-color: #1a1a1a;
+    color: #FFD1A4;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        padding: 10px 0;
+        background-color: #1a1a1a; /* Black background for mobile */
+        border-radius: 10px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        cursor: pointer;
+        padding: 5px;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .container {
