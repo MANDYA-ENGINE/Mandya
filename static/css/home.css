@@ -6,15 +6,14 @@ body {
     background-color: #FFE5CF; /* Light orange */
 }
 
-/* Header Styling */
 header {
-    background-color: #1a1a1a; /* Black background */
-    padding: 10px 20px;
+    background: linear-gradient(145deg, #1a1a1a, #292929); /* Gradient background */
+    padding: 15px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    position: sticky; /* Sticky header */
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
     top: 0;
     z-index: 10;
 }
@@ -25,6 +24,16 @@ header {
     max-width: 1200px;
     align-items: center;
     justify-content: space-between;
+}
+
+/* Logo Styling */
+.logo a img {
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.logo a img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
 }
 
 .logo img {
@@ -188,7 +197,32 @@ nav ul li a:hover {
     width: 200px;
 }
 .category {
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+}
+
+/* Center Course Grid in Category */
+.course-grid {
+    max-width: 1200px; /* Limit width for a clean central layout */
+    margin: 0 auto; /* Center the grid */
+    padding: 20px; /* Add spacing around the grid */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust card size for better fit */
+}
+
+/* Center Course Item Content */
+.course-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content in each card */
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
 }
 .category h2 {
     font-size: 1.8em;
@@ -213,12 +247,12 @@ nav ul li a:hover {
     font-size: 1.2em;
     color: #333;
 }
-.course-grid, .media-grid {
+.media-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
 }
-.course-item, .media-item {
+.media-item {
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -227,6 +261,13 @@ nav ul li a:hover {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+}
+.course-item img {
+    width: auto; 
+    max-height: 300px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    margin: auto; 
 }
 .course-item:hover, .media-item:hover {
     transform: translateY(-5px);
